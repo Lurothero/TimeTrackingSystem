@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\rolesseeder;
+use Database\Seeders\TypographySizeSeeder;
 
 class DatabaseSeeder extends Seeder
 {

@@ -13,6 +13,11 @@ class TimeFormatSeeder extends Seeder
      */
     public function run()
     {
+
+        DB::table('time_format')->insert([
+            'description'=>'default'
+        ]);
+        
         //
     }
 }
