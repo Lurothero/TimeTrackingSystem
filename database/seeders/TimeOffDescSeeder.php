@@ -13,6 +13,20 @@ class TimeOffDescSeeder extends Seeder
      */
     public function run()
     {
+
+        DB::table('time_off_desc')->insert([
+            'description'=>'sick'
+        ]);
+        
+        DB::table('time_off_desc')->insert([
+            'description'=>'pregnant'
+        ]);
+        DB::table('time_off_desc')->insert([
+            'description'=>'dead'
+        ]);
+        DB::table('time_off_desc')->insert([
+            'description'=>'vacation'
+        ]);
         //
     }
 }

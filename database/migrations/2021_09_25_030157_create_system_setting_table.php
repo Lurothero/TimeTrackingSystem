@@ -16,7 +16,7 @@ class CreateSystemSettingTable extends Migration
     {
         Schema::create('system_setting', function (Blueprint $table) {
             $table->id();
-            $table->time('system_time');
+            $table->string('system_time');
             $table->foreignIdFor(DomainList::class);
             $table->boolean('enforce_domain');
             $table->string('system_logo');

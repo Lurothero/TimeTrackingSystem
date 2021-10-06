@@ -13,6 +13,14 @@ class TimeFormatSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('time_format')->insert([
+            'description'=>'24-hours'
+        ]);
+        
+        DB::table('time_format')->insert([
+            'description'=>'12-hours'
+        ]);
+      
         //
     }
 }

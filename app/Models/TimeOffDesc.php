@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class TimeOffDesc extends Model
-{
+{public $timestamps =false;
     use HasFactory;
     protected $table ='time_off_desc';
 }

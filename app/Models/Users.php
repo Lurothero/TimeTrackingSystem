@@ -8,6 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Users extends Model
 {
     use HasFactory;
-    protected $table = 'users';
+    public $timestamps =false;
+    
+    protected $fillable =[
+'first_name','last_name','dob','google_id','email','role_id', 'timestamp_lastlogin'
+    ];
     
 }
